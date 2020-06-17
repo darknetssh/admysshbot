@@ -1,6 +1,6 @@
 <?php
 
-// Bot criado por @httd1 código original para o @ysshadmbot
+// Bot criado por @httd1 código original para o @DARKNET_SSH_bot
 
 date_default_timezone_set ('America/Sao_Paulo'); // define timestamp padrão
 

@@ -1,6 +1,6 @@
 <?php
 
-// Bot criado por @httd1 código original para o @ysshadmbot
+// Bot criado por @httd1 código original para o @DARKNET_SSH_bot
 
 date_default_timezone_set ('America/Sao_Paulo'); // define timestamp padrão
 
@@ -56,7 +56,7 @@ switch ($tlg->Text ()){
 
 	$tlg->sendMessage ([
 		'chat_id' => $tlg->ChatID (),
-		'text' => 'Bot original @admysshbot por @httd1'
+		'text' => 'Bot original @admysshbot por @darknetsuporte'
 	]);
 
 	break;
@@ -90,7 +90,7 @@ switch ($tlg->Text ()){
 
 		exec ('./gerarusuario.sh '.$usuario.' '.$senha.' 1 1');
 
-		$textoSSH="🇧🇷 Conta SSH criada ;)\r\n\r\n<b>Servidor:</b> <code>".$ip."</code>\r\n<b>Usuario:</b> <code>".$usuario."</code>\r\n<b>Senha:</b> <code>".$senha."</code>\r\n<b>Logins:</b> 1\r\n<b>Validade:</b> ".date ('d/m', strtotime('+1 day'))."\r\n\r\n🤙 Cortesia do @YellowSSHBot";
+		$textoSSH="🇧🇷 Conta SSH criada ;)\r\n\r\n<b>Servidor:</b> <code>".$ip."</code>\r\n<b>Usuario:</b> <code>".$usuario."</code>\r\n<b>Senha:</b> <code>".$senha."</code>\r\n<b>Logins:</b> 1\r\n<b>Validade:</b> ".date ('d/m', strtotime('+1 day'))."\r\n\r\n🤙 Cortesia do @darknetsuporte";
 
 		$redis->setex ($tlg->UserID (), 43200, 'true'); //define registro para ser guardado por 12h
 
